@@ -67,7 +67,7 @@ export default function catalog() {
           <br /><br />
               <p>Остаток</p>
           <select className="option"  onChange={sort}>
-            <option className="option" value="ost_asc">По возрастанию 11</option>
+            <option className="option" value="ost_asc">По возрастанию</option>
             <option className="option" value="ost_desc">По убыванию</option>
           </select>
           <br /><br />

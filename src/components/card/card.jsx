@@ -27,11 +27,11 @@ export default function Card ({name, price, id, ost, cat}) {
             {/* <Button title="Купить" /> */}
 
             
-            {ost ?  <button onClick={showModal}>В корзину</button> :  <button>Заказать</button>}
+            {ost ?  <button className='catalog-product-btn' onClick={showModal}>В корзину</button> :  <button className='catalog-product-btn'>Заказать</button>}
             <Modal isOpen={modalIsOpen}>
-                <div className="">
+                <div className="container">
                     <CreatePage setMoalIsOpen={setModalIsOpen}/>
-                    <button onClick={closeModal}>Закрыть</button>
+                    <button className='catalog-product-btn' onClick={closeModal}>Закрыть</button>
                 </div>
             </Modal>
 
